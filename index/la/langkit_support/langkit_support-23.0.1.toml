@@ -1,0 +1,28 @@
+name = "langkit_support"
+description = "Runtime support library for Langkit-generated libraries"
+
+# This version of version 23.0.0 is intended for use on macOS; the
+# difference is that the static library is built as a normal library
+# rather than a stand-alone library - the latter uses technology not
+# available on macOS.
+
+version = "23.0.1"
+
+authors = ["AdaCore"]
+maintainers = ["Pierre-Marie de Rodat <pmderodat@kawie.fr>"]
+maintainers-logins = ["pmderodat"]
+licenses = "Apache-2.0"
+website = "https://github.com/AdaCore/langkit"
+
+[[depends-on]]
+gnatcoll = "^23"
+gnatcoll_iconv = "^23"
+gnatcoll_gmp = "^23"
+
+[origin]
+hashes = [
+"sha256:c3c79f746ecd3f205fc11b40c44da54302b286cea81dbd234829fdcf3c23f7ef",
+"sha512:15ac64cfa6f2071594d50f6771989fad3419f0629c2165e86961f3e6e79f00f50ed4ca3f6f5d72287b4eecc3f7e01a533273c11fb6c67dea2f89125e52368f04",
+]
+url = "https://www.dropbox.com/s/7kesu54zxgsi4hq/langkit_support-23.0.1.zip"
+

@@ -1,0 +1,30 @@
+name = "libadalang"
+description = "Ada semantic analysis library"
+
+# This version of version 23.0.0 is intended for use on macOS; the
+# difference is that the static library is built as a normal library
+# rather than a stand-alone library - the latter uses technology not
+# available on macOS.
+
+version = "23.0.1"
+
+authors = ["AdaCore"]
+maintainers = ["Pierre-Marie de Rodat <pmderodat@kawie.fr>"]
+maintainers-logins = ["pmderodat"]
+licenses = "Apache-2.0"
+website = "https://github.com/AdaCore/libadalang"
+tags = ["libadalang", "static-analysis"]
+
+[[depends-on]]
+gnatcoll = "^23"
+gnatcoll_gmp = "^23"
+gnatcoll_iconv = "^23"
+langkit_support = "^23"
+
+[origin]
+hashes = [
+"sha256:05ce3226bb0168e12f2c2e199f4060dca7b461dd3c9bfb07d057c15510587df2",
+"sha512:0f422d53e465897fa787b7f3f82c8a8a64861a32bc588779c480f195a9e3fa54057f7de48ac40f191a872151af452b539a71663a69bbd110b6859f07d48eb341",
+]
+url = "https://www.dropbox.com/s/hb5hbytl9boivm7/libadalang-23.0.1.zip"
+
