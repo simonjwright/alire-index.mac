@@ -13,3 +13,54 @@ The crates provided are:
 * Tools
   * `gnat_macos_aarch64=13.1.0`, native GNAT for Apple silicon.
   * `gprbuild=23.0.0-mac-aarch64`, matching gprbuild (avoids you having to say `--target=aarch64-apple-darwin` at every compilation!)
+  
+To install:
+
+```
+$ alr index \
+   --add=git+https://github.com/simonjwright/alire-index.mac.git
+   --before=community 
+   --name=index_for_mac
+```
+
+after which
+
+```
+$ alr toolchain --select
+Welcome to the toolchain selection assistant     
+
+In this assistant you can set up the default toolchain to be used with any crate
+that does not specify its own top-level dependency on a version of gnat or 
+gprbuild.
+
+If you choose "None", Alire will use whatever version is found in the 
+environment.
+
+ⓘ gnat is currently not configured. (alr will use the version found in the environment.)
+
+Please select the gnat version for use with this configuration
+  1. gnat_external=13.1.0 [Detected at /opt/gcc-13.1.0-aarch64/bin/gnat]
+  2. None
+  3. gnat_macos_aarch64=13.1.0
+Enter your choice index (first is default): 
+> 3
+ⓘ Selected tool version gnat_macos_aarch64=13.1.0
+
+ⓘ Choices for the following tool are narrowed down to releases compatible with just selected gnat_macos_aarch64=13.1.0
+
+ⓘ gprbuild is currently not configured. (alr will use the version found in the environment.)
+
+Please select the gprbuild version for use with this configuration
+  1. gprbuild=23.0.0-mac-aarch64
+  2. None
+Enter your choice index (first is default): 
+> 1
+ⓘ Selected tool version gprbuild=23.0.0-mac-aarch64
+```
+
+If you're running [Homebrew](https://brew.sh) (on either Intel or Apple silicon) we recommend that you add this to your shell startup scripts (_after_ invoking `shellenv`!):
+
+```
+export C_INCLUDE_PATH=$HOMEBREW_PREFIX/include
+export LIBRARY_PATH=$HOMEBREW_PREFIX/lib
+```
