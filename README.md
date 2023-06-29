@@ -18,8 +18,8 @@ To install:
 
 ```
 $ alr index \
-   --add=git+https://github.com/simonjwright/alire-index.mac.git
-   --before=community 
+   --add=git+https://github.com/simonjwright/alire-index.mac.git \
+   --before=community \
    --name=index_for_mac
 ```
 
