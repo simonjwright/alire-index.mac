@@ -1,0 +1,27 @@
+name = "gnat_macos_aarch64"
+version = "13.1.1"
+provides = ["gnat=13.1.1"]
+description = "The GNAT Ada compiler - Native"
+maintainers = ["simon@pushface.org"]
+maintainers-logins = ["simonjwright"]
+licenses = "GPL-3.0-or-later AND GPL-3.0-or-later WITH GCC-exception-3.1"
+
+auto-gpr-with = false
+
+[configuration]
+disabled = true
+
+[environment]
+PATH.prepend = "${CRATE_ROOT}/bin"
+
+[available."case(os)".macos."case(host-arch)"]
+"aarch64" = true
+"..." = false
+
+[origin]
+hashes = [
+"sha256:e5076f9e15c4e70d97242a65432975b89a72f406817bb94390f20f0bd561fdd9",
+"sha512:f96e1fbc5d12e12d84c5484ef74b71f71b90c0b991790650a55aa46bf97946851a4365276ff775d87acb008b92cc038591bff544f711feadd0cf179cfc57c15a",
+]
+url = "https://www.dropbox.com/scl/fi/oj97xg1x78fzvsae1ufww/gnat-macos-aarch64-13.1.1.tar.gz?rlkey=1t1qwcguvxgn4rybq2xi2pudv&dl=0"
+

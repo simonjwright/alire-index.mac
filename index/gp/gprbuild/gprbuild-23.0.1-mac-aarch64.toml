@@ -1,0 +1,34 @@
+name = "gprbuild"
+description = "The GPRBuild Ada/multilanguage build tool"
+maintainers = [
+"simon@pushface.org",
+]
+maintainers-logins = [
+"simonjwright",
+]
+version = "23.0.1-mac-aarch64"
+
+auto-gpr-with = false
+
+[configuration]
+auto_gpr_with = true
+disabled = true
+generate_ada = true
+generate_c = true
+generate_gpr = true
+output_dir = "config"
+
+[environment]
+PATH.prepend = "${CRATE_ROOT}/bin"
+
+[available."case(os)".macos."case(host-arch)"]
+"aarch64" = true
+"..." = false
+
+[origin]
+hashes = [
+"sha256:6b9785ed92ce9bb9d785d9c488f660ecb3c37eb95c2c8b900c9e13544a8235a8",
+"sha512:5c43bed5b7db2436da763aaceabe4c5966351b61befe23912bff46ac53e25db0d7b95f1ec034452d3d19ad633b76a0c84e9ec4fc7a82f015252de362943167aa",
+]
+url = "https://www.dropbox.com/scl/fi/05vnl8glgxrtog3xt91d5/gprbuild-macos-aarch64-23.0.1.tar.gz?rlkey=xwbpa8ndfe06cw3ttruq7w2p6&dl=0"
+
