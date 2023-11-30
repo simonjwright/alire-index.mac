@@ -19,6 +19,10 @@ gnatcoll = "^23"
 gnatcoll_iconv = "^23"
 gnatcoll_gmp = "^23"
 
+[available."case(os)"]
+"macos" = true
+"..." = false
+
 [origin]
 hashes = [
 "sha256:c3c79f746ecd3f205fc11b40c44da54302b286cea81dbd234829fdcf3c23f7ef",
