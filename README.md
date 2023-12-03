@@ -11,8 +11,8 @@ The crates provided are:
   * `langkit_support-23.0.1`, builds a plain static library.
   * `libadalang-23.0.1`, likewise.
 * Tools
-  * `gnat_macos_aarch64=13.1.1`, native GNAT for Apple silicon.
-  * `gprbuild=23.0.1-mac-aarch64`, matching gprbuild (avoids you having to say `--target=aarch64-apple-darwin` at every compilation!)
+  * `gnat_macos_aarch64=13.1.2`, native GNAT for Apple silicon.
+  * `gprbuild=23.0.2-mac-aarch64`, matching gprbuild (avoids you having to say `--target=aarch64-apple-darwin` at every compilation!)
   
 To install:
 
