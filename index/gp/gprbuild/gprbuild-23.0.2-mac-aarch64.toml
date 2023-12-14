@@ -25,7 +25,7 @@ PATH.prepend = "${CRATE_ROOT}/bin"
 "aarch64" = true
 "..." = false
 
-[origin]
+[origin."case(os)".macos."case(host-arch)".aarch64]
 hashes = [
 "sha256:c063bbab1687f678be23f058c0011df33fc70186d325298d9a49c1038ed76cc9",
 "sha512:57fbf30e4fa6b721849ab1f9e38bd1a7d45757758e0aab96911eebf22d5db7c0b1345f73ee9cf9d89e7f47a76b9880fd85c19986083eef959d820d64569c6a9f"
