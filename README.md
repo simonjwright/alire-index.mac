@@ -1,20 +1,14 @@
-This repository contains Alire crates that are intended to overcome some issues that arise from macOS features.
+This repository contains 
 
-For example:
-
+* `alr` built for Apple silicon. See the _Alr binary_ release.
+* Alire crates providing `gnat` and `gprbuild` for Apple silicon.
+  * `gnat_macos_aarch64=13.2.1`, native GNAT for Apple silicon.
+  * `gprbuild=23.0.2-mac-aarch64`, matching gprbuild (avoids you having to say `--target=aarch64-apple-darwin` at every compilation!)
 * Gprbuild can try to build static standalone libraries, where the 'standalone' part means that the library will be automatically elaborated. It does this using features available in GNU binutils, but not in Mach-O binary. Alternative versions of crates that normally would attempt this are provided.
-* It provides tool versions built for Apple silicon.
-
-The crates provided are:
-
-* Libraries
   * `langkit_support-23.0.1`, builds a plain static library.
   * `libadalang-23.0.1`, likewise.
-* Tools
-  * `gnat_macos_aarch64=13.1.2`, native GNAT for Apple silicon.
-  * `gprbuild=23.0.2-mac-aarch64`, matching gprbuild (avoids you having to say `--target=aarch64-apple-darwin` at every compilation!)
   
-To install:
+To add the crates to your index:
 
 ```
 $ alr index \
@@ -39,25 +33,25 @@ environment.
 ⓘ gnat is currently not configured. (alr will use the version found in the environment.)
 
 Please select the gnat version for use with this configuration
-  1. gnat_external=13.1.0 [Detected at /opt/gcc-13.1.0-aarch64/bin/gnat]
+  1. gnat_external=13.2.0 [Detected at /opt/gcc-13.2.0-aarch64/bin/gnat]
   2. None
-  3. gnat_macos_aarch64=13.1.1
+  3. gnat_macos_aarch64=13.2.1
   4. gnat_macos_aarch64=13.1.0
 Enter your choice index (first is default): 
 > 3
-ⓘ Selected tool version gnat_macos_aarch64=13.1.1
+ⓘ Selected tool version gnat_macos_aarch64=13.2.1
 
-ⓘ Choices for the following tool are narrowed down to releases compatible with just selected gnat_macos_aarch64=13.1.1
+ⓘ Choices for the following tool are narrowed down to releases compatible with just selected gnat_macos_aarch64=13.2.1
 
 ⓘ gprbuild is currently not configured. (alr will use the version found in the environment.)
 
 Please select the gprbuild version for use with this configuration
-  1. gprbuild=23.0.1-mac-aarch64
+  1. gprbuild=23.0.2-mac-aarch64
   2. None
-  3. gprbuild=23.0.0-mac-aarch64
+  3. gprbuild=23.0.1-mac-aarch64
 Enter your choice index (first is default): 
 > 1
-ⓘ Selected tool version gprbuild=23.0.1-mac-aarch64
+ⓘ Selected tool version gprbuild=23.0.2-mac-aarch64
 ```
 
 If you're running [Homebrew](https://brew.sh) (on either Intel or Apple silicon) we recommend that you add this to your shell startup scripts (_after_ invoking `shellenv`!):
