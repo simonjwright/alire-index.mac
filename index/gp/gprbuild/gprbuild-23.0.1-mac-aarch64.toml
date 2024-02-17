@@ -25,10 +25,10 @@ PATH.prepend = "${CRATE_ROOT}/bin"
 "aarch64" = true
 "..." = false
 
-[origin]
+[origin."case(os)".macos."case(host-arch)".aarch64]]
 hashes = [
 "sha256:54e8fab22e5aa5f567605cbc73e98172464f2d9bc2713a0595942aa1edadca35",
 "sha512:5ba5770866cb7360091e178f80a05bcc6e9f12504bcca563da0e5aed634ea03b944022b979f5ba18d4e3d839d2c2ac2c4af61861ad9535260481dc9cbe16d368",
 ]
-url = "https://www.dropbox.com/scl/fi/05vnl8glgxrtog3xt91d5/gprbuild-macos-aarch64-23.0.1.tar.gz?rlkey=xwbpa8ndfe06cw3ttruq7w2p6&dl=0"
+url = "https://www.dropbox.com/scl/fi/05vnl8glgxrtog3xt91d5/gprbuild-macos-aarch64-23.0.1.tar.gz?rlkey=xwbpa8ndfe06cw3ttruq7w2p6&dl=1"
 
