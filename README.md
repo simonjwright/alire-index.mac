@@ -2,15 +2,15 @@ This repository contains
 
 * `alr` built for Apple silicon. See the _Alr binary_ release.
 * Alire crates providing `gnat` and `gprbuild` for Apple silicon.
-  * `gnat_macos_aarch64=13.2.1`, native GNAT for Apple silicon.
-  * `gprbuild=23.0.2-mac-aarch64`, matching gprbuild (avoids you having to say `--target=aarch64-apple-darwin` at every compilation!)
+  * `gnat_macos_aarch64=13.2.2`, native GNAT for Apple silicon.
+  * `gprbuild=24.0.1-mac-aarch64`, matching gprbuild (avoids you having to say `--target=aarch64-apple-darwin` at every compilation!)
 * Gprbuild can try to build static standalone libraries, where the 'standalone' part means that the library will be automatically elaborated. It does this using features available in GNU binutils, but not in Mach-O binary. Alternative versions of crates that normally would attempt this are provided.
   * `langkit_support-24.0.1`, builds a plain static library.
   * `libadalang-24.0.1`, likewise.
 
 To add the crates to your index:
 
-```
+```shell
 $ alr index --reset-community
 $ alr index \
    --add=git+https://github.com/simonjwright/alire-index.mac.git \
@@ -20,7 +20,7 @@ $ alr index \
 
 after which
 
-```
+```none
 $ alr toolchain --select
 Welcome to the toolchain selection assistant
 
@@ -36,8 +36,8 @@ environment.
 Please select the gnat version for use with this configuration
   1. gnat_external=13.2.0 [Detected at /opt/gcc-13.2.0-aarch64/bin/gnat]
   2. None
-  3. gnat_macos_aarch64=13.2.1
-  4. gnat_macos_aarch64=13.1.0
+  3. gnat_macos_aarch64=13.2.2
+  4. gnat_macos_aarch64=13.1.1
 Enter your choice index (first is default):
 > 3
 ⓘ Selected tool version gnat_macos_aarch64=13.2.1
@@ -47,9 +47,9 @@ Enter your choice index (first is default):
 ⓘ gprbuild is currently not configured. (alr will use the version found in the environment.)
 
 Please select the gprbuild version for use with this configuration
-  1. gprbuild=23.0.2-mac-aarch64
+  1. gprbuild=24.0.1-mac-aarch64
   2. None
-  3. gprbuild=23.0.1-mac-aarch64
+  3. gprbuild=23.0.3-mac-aarch64
 Enter your choice index (first is default):
 > 1
 ⓘ Selected tool version gprbuild=23.0.2-mac-aarch64
