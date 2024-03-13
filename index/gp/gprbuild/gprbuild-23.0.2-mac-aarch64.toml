@@ -32,4 +32,4 @@ hashes = [
 "sha512:d1c507e08c2c6e7eba8551582d80182a745877e26fea472031cad43c5c7b577c947bcff481d1f5837119d3eefa58bf2d2ebefee94d3391f06a82a0e1c4de9937"
 ]
 url = "https://github.com/simonjwright/alire-index.mac/releases/download/toolchain-13.2.1/gprbuild-macos-aarch64-23.0.2.tar.gz?dl=1"
-
+binary=true

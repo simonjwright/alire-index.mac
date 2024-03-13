@@ -24,3 +24,5 @@ hashes = [
 "sha512:5fb3aa48cf39379449abe128bcb157bb3fe3adfc672447134a8692e3fb1ec7bc5ea3552ea9f007da9e51d6c0fa75dad7c042675b5f07bf35082516ea2b026415",
 ]
 url = "https://github.com/simonjwright/alire-index.mac/releases/download/toolchain-13.2.1/gnat-macos-aarch64-13.2.1.tar.gz"
+binary=true
+
