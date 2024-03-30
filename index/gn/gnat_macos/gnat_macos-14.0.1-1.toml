@@ -20,8 +20,8 @@ PATH.prepend = "${CRATE_ROOT}/bin"
 
 [origin."case(os)".macos."case(host-arch)".x86_64]
 hashes = [
-"sha256:423ca112e4c2c8b7f6db58d9a49808ed72f00bf586c5b322243411e44650fd51",
-"sha512:87da91ee981a41dea8990b1a6bab4496922fb56b30b2cfb404ded6a8ecca9057fb90e4c1d214fb741fca548b69d8da63fb1601011e868f6dc7a93f057bcb210b",
+"sha256:ab7115752b112fc9e34f02bc160c0eb1b8d0a6f1deaf50a645455f3f2deaacbc",
+"sha512:d6a9379de90293017a59dcb369abf8aa89bd5bf46fcd1eab208f1e3ce2547aaca893d2a0bcbae4d5868c1b644b50fcb7185dd3f716b841b7488247190c089f10",
 ]
 url = "https://github.com/simonjwright/alire-index.mac/releases/download/toolchain-13.2.1/gnat-macos-x86_64-14.0.1-1.tar.bz2"
 binary = true
