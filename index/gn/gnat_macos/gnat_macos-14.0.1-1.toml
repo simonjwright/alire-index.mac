@@ -1,0 +1,28 @@
+name = "gnat_macos"
+version = "14.0.1-1"
+provides = ["gnat=14.0.1-1"]
+description = "The GNAT Ada compiler - Native"
+maintainers = ["simon@pushface.org"]
+maintainers-logins = ["simonjwright"]
+licenses = "GPL-3.0-or-later AND GPL-3.0-or-later WITH GCC-exception-3.1"
+
+auto-gpr-with = false
+
+[configuration]
+disabled = true
+
+[environment]
+PATH.prepend = "${CRATE_ROOT}/bin"
+
+# [available."case(os)".macos."case(host-arch)"]
+# "x86_64" = true
+# "..." = false
+
+[origin."case(os)".macos."case(host-arch)".x86_64]
+hashes = [
+"sha256:423ca112e4c2c8b7f6db58d9a49808ed72f00bf586c5b322243411e44650fd51",
+"sha512:87da91ee981a41dea8990b1a6bab4496922fb56b30b2cfb404ded6a8ecca9057fb90e4c1d214fb741fca548b69d8da63fb1601011e868f6dc7a93f057bcb210b",
+]
+url = "https://github.com/simonjwright/alire-index.mac/releases/download/toolchain-13.2.1/gnat-macos-x86_64-14.0.1-1.tar.bz2"
+binary = true
+

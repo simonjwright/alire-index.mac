@@ -1,0 +1,34 @@
+name = "gprbuild"
+description = "The GPRBuild Ada/multilanguage build tool"
+maintainers = [
+"simon@pushface.org",
+]
+maintainers-logins = [
+"simonjwright",
+]
+version = "24.0.1-mac-x86_64"
+
+auto-gpr-with = false
+
+[configuration]
+auto_gpr_with = true
+disabled = true
+generate_ada = true
+generate_c = true
+generate_gpr = true
+output_dir = "config"
+
+[environment]
+PATH.prepend = "${CRATE_ROOT}/bin"
+
+[available."case(os)".macos."case(host-arch)"]
+"x86_64" = true
+"..." = false
+
+[origin."case(os)".macos."case(host-arch)".x86_64]
+hashes = [
+"sha256:7c7dfd06080786422619a60a78ba0f7ce84229468fe19ac8e34cb0e4d258e448",
+"sha512:3689faa9bd4448827d0c61325c18b2645e2e6048b96b64a161e06a63aebdfc6e206871bfd1e255e5c02b8c318598a5611ef332534b2fe98d7581254ef0406a2e"
+]
+url = "https://github.com/simonjwright/alire-index.mac/releases/download/toolchain-13.2.1/gprbuild-macos-x86_64-24.0.1.tar.bz2"
+binary = true
