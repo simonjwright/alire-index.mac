@@ -27,8 +27,8 @@ PATH.prepend = "${CRATE_ROOT}/bin"
 
 [origin."case(os)".macos."case(host-arch)".x86_64]
 hashes = [
-"sha256:7c7dfd06080786422619a60a78ba0f7ce84229468fe19ac8e34cb0e4d258e448",
-"sha512:3689faa9bd4448827d0c61325c18b2645e2e6048b96b64a161e06a63aebdfc6e206871bfd1e255e5c02b8c318598a5611ef332534b2fe98d7581254ef0406a2e"
+"sha256:3341c82e21c37d1edcba76c42ea24cc4b011e285b38e8a9ad94e28a6d2d71557",
+"sha512:bef77dfdb217cd59587b68ccfaaa39dce756484a672bb7272500a7c66a019b5e10a3a1a8a114bb3add9f69f8caf8f1abf23f799f1065f1fd984782ec4be1d42f"
 ]
 url = "https://github.com/simonjwright/alire-index.mac/releases/download/toolchain-13.2.1/gprbuild-macos-x86_64-24.0.1.tar.bz2"
 binary = true
