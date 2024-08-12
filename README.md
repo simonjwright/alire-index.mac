@@ -2,7 +2,7 @@ This repository contains
 
 * `alr` built for Apple silicon. See the _Alr binary_ release.
 * Alire crates providing `gnat` and `gprbuild` for Apple silicon.
-  * `gnat_macos_aarch64=13.2.2`, native GNAT for Apple silicon.
+  * `gnat_macos_aarch64=14.1.0-1`, native GNAT for Apple silicon.
   * `gprbuild=24.0.1-mac-aarch64`, matching gprbuild (avoids you having to say `--target=aarch64-apple-darwin` at every compilation!)
 * Gprbuild can try to build static standalone libraries, where the 'standalone' part means that the library will be automatically elaborated. It does this using features available in GNU binutils, but not in Mach-O binary. Alternative versions of crates that normally would attempt this are provided.
   * `langkit_support-24.0.1`, builds a plain static library.
